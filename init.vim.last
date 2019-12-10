@@ -24,7 +24,14 @@ if vim_plug_just_installed
     :execute 'source '.fnameescape(vim_plug_path)
 endif
 
+" set Python path
+let g:python3_host_prog = '/home/sasha/pythonchik3/bin/python'
+let g:python_host_prog = '/home/sasha/pythonchik3/bin/python'
 " Obscure hacks done, you can now modify the rest of the .vimrc as you wish :)
+
+"clipboard for tmux
+set clipboard=unnamedplus
+
 
 " ============================================================================
 " Active plugins
@@ -80,6 +87,13 @@ Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 " from this plugin is disabled
 Plug 'davidhalter/jedi-vim'
 
+
+"bobik start
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+
+"bobik end
+
+
 " Automatically close parenthesis, etc
 Plug 'Townk/vim-autoclose'
 
@@ -112,45 +126,8 @@ Plug 'fisadev/vim-isort'
 " Highlight matching html tags
 Plug 'valloric/MatchTagAlways'
 
-"*****************************************************************************
-"" Custom bundles
-"*****************************************************************************
-
-" c
-Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
-Plug 'ludwig/split-manpage.vim'
-
-
-" html
-"" HTML Bundle
-Plug 'hail2u/vim-css3-syntax'
-Plug 'gorodinskiy/vim-coloresque'
-Plug 'tpope/vim-haml'
+" Generate html in a simple way
 Plug 'mattn/emmet-vim'
-
-
-" javascript
-"" Javascript Bundle
-Plug 'jelera/vim-javascript-syntax'
-
-
-" php
-"" PHP Bundle
-Plug 'arnaud-lb/vim-php-namespace'
-
-
-" python
-"" Python Bundle
-Plug 'tweekmonster/django-plus.vim'
-
-Plug 'zchee/deoplete-jedi'
-Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
-"Ale config
-let b:ale_linters = ['flake8']
-let b:ale_fixers = ['autopep8']
-
-" end 2 bobik
-
 
 " Git integration
 Plug 'tpope/vim-fugitive'
@@ -173,13 +150,12 @@ Plug 'neomake/neomake'
 " to avoid that)
 Plug 'myusuf3/numbers.vim'
 
-" bobik start
-" Semantic Highlighting for Python in Neovim 
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-" bobik end
-
 " Nice icons
 " Plug 'ryanoasis/vim-devicons'
+
+" Solidity
+Plug 'tomlion/vim-solidity'
+
 
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
@@ -410,12 +386,12 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.linenr = '⭡'
 
 " Python run
-nnoremap <C-R> :vsp <CR> :term python % <CR>
-nnoremap <C-W> :bd!<CR>
+" nnoremap <C-R> :vsp <CR> :term python % <CR>
+" nnoremap <C-W> :bd!<CR>
 
 " Gams run
-nnoremap <C-G> :vsp <CR> :term gams % <CR>
-nnoremap <C-W> :bd! <CR>
+" nnoremap <C-G> :vsp <CR> :term gams % <CR>
+" nnoremap <C-W> :bd! <CR>
 
 "Gams filetype
 au BufNewFile,BufRead *.gms	 setf gams
