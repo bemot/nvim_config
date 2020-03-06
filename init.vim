@@ -287,7 +287,8 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 " Enable folder icons
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
-
+"bobik
+let NERDTreeShowHidden=1
 " Fix directory colors
 highlight! link NERDTreeFlags NERDTreeDir
 
@@ -379,7 +380,12 @@ nmap ,D :tab split<CR>:call jedi#goto()<CR>
 " mappings
 nmap ,r :Ack 
 nmap ,wr :execute ":Ack " . expand('<cword>')<CR>
+"bobik
+nnoremap <buffer> <F9> :w <bar> :exec '!python' shellescape(@%, 1)<cr>
+nnoremap <buffer> <F5> :w <bar> :exec '!/home/sasha/GAMSLINUX/gams' shellescape(@%, 1)<cr>
+au BufNewFile,BufRead *.gms  setf gams
 
+"
 " Window Chooser ------------------------------
 
 " mapping
