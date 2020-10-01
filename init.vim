@@ -168,7 +168,9 @@ endif
 " ============================================================================
 " Vim settings and mappings
 " You can edit them as you wish
- 
+"bobik
+let g:python3_host_prog = '/home/sasha/pythonchik_NVIM/bin/python'
+"
 if using_vim
     " A bunch of things that are set by default in neovim, but not in vim
 
