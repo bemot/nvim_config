@@ -7,8 +7,9 @@
 " (if you aren't using one of those fonts, you will see funny characters here. 
 " Turst me, they look nice when using one of those fonts).
 let fancy_symbols_enabled = 1
-
-
+"bobik
+let mapleader=","
+"end bobik
 set encoding=utf-8
 let using_neovim = has('nvim')
 let using_vim = !using_neovim
@@ -59,9 +60,12 @@ else
 endif
 
 " Now the actual plugins:
-
+"bobik
+Plug 'lervag/vimtex'
+"end of bobik
 " Override configs by directory
 Plug 'arielrossanigo/dir-configs-override.vim'
+Plug 'JuliaEditorSupport/julia-vim'
 " Code commenter
 Plug 'scrooloose/nerdcommenter'
 " Better file browser
@@ -134,7 +138,10 @@ Plug 'neomake/neomake'
 Plug 'myusuf3/numbers.vim'
 " Nice icons in the file explorer and file type status line.
 Plug 'ryanoasis/vim-devicons'
-
+"
+"GraphQL plugin
+Plug 'jparise/vim-graphql'
+"
 if using_vim
     " Consoles as buffers (neovim has its own consoles as buffers)
     Plug 'rosenfeld/conque-term'
@@ -464,3 +471,26 @@ endif
 if filereadable(expand(custom_configs_path))
   execute "source " . custom_configs_path
 endif
+
+"bobik
+" Only apply to .txt files...
+augroup HelpInTabs
+    autocmd!
+    autocmd BufEnter *.txt  call HelpInNewTab()
+augroup END
+
+" Only apply to help files...
+function! HelpInNewTab ()
+    if &buftype == 'help'
+        "Convert the help window to a tab...
+        execute "normal \<C-W>T"
+    endif
+endfunction  
+" tex file compilation
+nnoremap <leader>c :w<CR>:! pdflatex %<CR>
+
+" View PDF macro; '%:r' is current file's root (base) name.
+nnoremap <leader>v :!mupdf %:r.pdf &<CR><CR>
+
+" choosing default tex flavor
+let g:tex_flavor = 'latex'

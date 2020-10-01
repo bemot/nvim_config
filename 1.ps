@@ -1,0 +1,2917 @@
+%!PS-Adobe-3.0
+%%Title: init.vim
+%%For: sasha
+%%Creator: NVIM v0.3.5
+%%CreationDate: Fri Apr 10 15:48:37 2020
+%%DocumentData: Clean8Bit
+%%Orientation: Portrait
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%BoundingBox: 59 49 564 800
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%DocumentSuppliedResources: procset VIM-Prolog 1.4 1
+%%+ encoding VIM-latin1 1.0 0
+%%Requirements: duplex collate color
+%%EndComments
+%%BeginDefaults
+%%PageResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%PageMedia: A4
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset VIM-Prolog
+%%BeginDocument: /usr/local/share/nvim/runtime/print/prolog.ps
+%!PS-Adobe-3.0 Resource-ProcSet
+%%Title: VIM-Prolog
+%%Version: 1.4 1
+%%EndComments
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/packedarray where not{userdict begin/setpacking/pop load def/currentpacking
+false def end}{pop}ifelse/CP currentpacking def true setpacking
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m/moveto ld/s/show ld /ms{m s}bd /g/setgray ld/r/setrgbcolor ld/sp{showpage}bd
+/gs/gsave ld/gr/grestore ld/cp/currentpoint ld
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall/Encoding findresource dup length 256 eq{NFD/Encoding
+3 -1 roll put}{pop}ifelse NFD dup/FontType get 3 ne{/CharStrings}{/CharProcs}
+ifelse 2 copy known{2 copy get dup maxlength dict copy[/questiondown/space]{2
+copy known{2 copy get 2 index/.notdef 3 -1 roll put pop exit}if pop}forall put
+}{pop pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+CP setpacking
+(\004)cvn{}bd
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%BeginResource: encoding VIM-latin1
+%%BeginDocument: /usr/local/share/nvim/runtime/print/latin1.ps
+%!PS-Adobe-3.0 Resource-Encoding
+%%Title: VIM-latin1
+%%Version: 1.0 0
+%%EndComments
+/VIM-latin1[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis]
+/Encoding defineresource pop
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%EndProlog
+%%BeginSetup
+595 842 0 sps
+1 nc
+T F dt
+T c
+%%IncludeResource: font Courier
+/_F0 /VIM-latin1 /Courier ref
+/F0 10 /_F0 ffs
+%%IncludeResource: font Courier-Bold
+/_F1 /VIM-latin1 /Courier-Bold ref
+/F1 10 /_F1 ffs
+%%IncludeResource: font Courier-Oblique
+/_F2 /VIM-latin1 /Courier-Oblique ref
+/F2 10 /_F2 ffs
+%%IncludeResource: font Courier-BoldOblique
+/_F3 /VIM-latin1 /Courier-BoldOblique ref
+/F3 10 /_F3 ffs
+/UO -1 d
+/UW 0.5 d
+/BO -2.5 d
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+0 g
+(init.vim                                                                      Page 1)59.5 792.4 ms
+F0 sf
+0.376 0 0.376 r
+(" Fisa-vim-config, a config for both Vim and NeoVim)59.5 772.4 ms
+(" http://vim.fisadev.com)59.5 762.4 ms
+(" version: 12.0.0)59.5 752.4 ms
+(" To use fancy symbols wherever possible, change this setting from 0 to 1)59.5 732.4 ms
+(" and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal )59.5 722.4 ms
+(" \(if you aren't using one of those fonts, you will see funny characters here. )59.5 712.4 ms
+(" Turst me, they look nice when using one of those fonts\).)59.5 702.4 ms
+(let)59.5 692.4 ms
+0 g
+( )s
+0 0 0.376 r
+(fancy_symbols_enabled)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+(set)59.5 662.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(encoding)s
+0 g
+(=utf-8)s
+0.376 0 0.376 r
+(let)59.5 652.4 ms
+0 g
+( )s
+0 0 0.376 r
+(using_neovim)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+(has)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+('nvim')s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0.376 0 0.376 r
+(let)59.5 642.4 ms
+0 g
+( )s
+0 0 0.376 r
+(using_vim)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( !using_neovim)s
+0.376 0 0.376 r
+(" ============================================================================)59.5 622.4 ms
+(" Vim-plug initialization)59.5 612.4 ms
+(" Avoid modifying this section, unless you are very sure of what you are doing)59.5 602.4 ms
+(let)59.5 582.4 ms
+0 g
+( )s
+0 0 0.376 r
+(vim_plug_just_installed)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(0)s
+0.376 0 0.376 r
+(if)59.5 572.4 ms
+0 g
+( using_neovim)s
+(    )59.5 562.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(vim_plug_path)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+(expand)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+('~/.config/nvim/autoload/plug.vim')s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0.376 0 0.376 r
+(else)59.5 552.4 ms
+0 g
+(    )59.5 542.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(vim_plug_path)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+(expand)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+('~/.vim/autoload/plug.vim')s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0.376 0 0.376 r
+(endif)59.5 532.4 ms
+(if)59.5 522.4 ms
+0 g
+( !)s
+0.376 0 0 r
+(filereadable)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(vim_plug_path)s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(    )59.5 512.4 ms
+0.376 0 0.376 r
+(echo)s
+0 g
+( )s
+0.376 0 0 r
+("Installing Vim-plug...")s
+0 g
+(    )59.5 502.4 ms
+0.376 0 0.376 r
+(echo)s
+0 g
+( )s
+0.376 0 0 r
+("")s
+0 g
+(    )59.5 492.4 ms
+0.376 0 0.376 r
+(if)s
+0 g
+( using_neovim)s
+(        )59.5 482.4 ms
+0.376 0 0.376 r
+(silent)s
+0 g
+( !mkdir )s
+0.376 0 0.376 r
+(-p)s
+0 g
+( ~/)s
+0.376 0 0.376 r
+(.)s
+0 g
+(config/nvim/autoload)s
+(        )59.5 472.4 ms
+0.376 0 0.376 r
+(silent)s
+0 g
+( !curl )s
+0.376 0 0.376 r
+(-)s
+0 g
+(fLo ~/)s
+0.376 0 0.376 r
+(.)s
+0 g
+(config/nvim/autoload/plug)s
+0.376 0 0.376 r
+(.vim)s
+0 g
+( )s
+0.376 0 0.376 r
+(--)s
+0 g
+(create)s
+0.376 0 0.376 r
+(-)s
+0 g
+(dirs https://raw)s
+0.376 0 0.376 r
+(.)59.5 462.4 ms
+0 g
+(githubusercontent)s
+0.376 0 0.376 r
+(.com)s
+0 g
+(/junegunn/)s
+0.376 0 0.376 r
+(vim-)s
+0 g
+(plug/master/plug)s
+0.376 0 0.376 r
+(.vim)s
+0 g
+(    )59.5 452.4 ms
+0.376 0 0.376 r
+(else)s
+0 g
+(        )59.5 442.4 ms
+0.376 0 0.376 r
+(silent)s
+0 g
+( !mkdir )s
+0.376 0 0.376 r
+(-p)s
+0 g
+( ~/)s
+0.376 0 0.376 r
+(.vim)s
+0 g
+(/autoload)s
+(        )59.5 432.4 ms
+0.376 0 0.376 r
+(silent)s
+0 g
+( !curl )s
+0.376 0 0.376 r
+(-)s
+0 g
+(fLo ~/)s
+0.376 0 0.376 r
+(.vim)s
+0 g
+(/autoload/plug)s
+0.376 0 0.376 r
+(.vim)s
+0 g
+( )s
+0.376 0 0.376 r
+(--)s
+0 g
+(create)s
+0.376 0 0.376 r
+(-)s
+0 g
+(dirs https://raw)s
+0.376 0 0.376 r
+(.)s
+0 g
+(githubu)s
+(sercontent)59.5 422.4 ms
+0.376 0 0.376 r
+(.com)s
+0 g
+(/junegunn/)s
+0.376 0 0.376 r
+(vim-)s
+0 g
+(plug/master/plug)s
+0.376 0 0.376 r
+(.vim)s
+0 g
+(    )59.5 412.4 ms
+0.376 0 0.376 r
+(endif)s
+0 g
+(    )59.5 402.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(vim_plug_just_installed)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+(endif)59.5 392.4 ms
+(" manually load vim-plug the first time)59.5 372.4 ms
+(if)59.5 362.4 ms
+0 g
+( vim_plug_just_installed)s
+(    :)59.5 352.4 ms
+0.376 0 0.376 r
+(execute)s
+0 g
+( )s
+0.376 0 0 r
+('source ')s
+0.376 0 0.376 r
+(.)s
+0.376 0 0 r
+(fnameescape)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(vim_plug_path)s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0.376 0 0.376 r
+(endif)59.5 342.4 ms
+(" Obscure hacks done, you can now modify the rest of the config down below )59.5 322.4 ms
+(" as you wish :\))59.5 312.4 ms
+(")59.5 302.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(IMPORTANT: some things in the config are vim or neovim specific. It's easy )s
+(" to spot, they are inside `if using_vim` or `if using_neovim` blocks.)59.5 292.4 ms
+(" ============================================================================)59.5 272.4 ms
+(" Active plugins)59.5 262.4 ms
+(" You can disable or add new ones here:)59.5 252.4 ms
+(" this needs to be here, so vim-plug knows we are declaring the plugins we)59.5 232.4 ms
+(" want to use)59.5 222.4 ms
+(if)59.5 212.4 ms
+0 g
+( using_neovim)s
+(    )59.5 202.4 ms
+0.376 0 0.376 r
+(call)s
+0 g
+( plug#)s
+0.498 0.125 0.498 r
+(begin)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+("~/.config/nvim/plugged")s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0.376 0 0.376 r
+(else)59.5 192.4 ms
+0 g
+(    )59.5 182.4 ms
+0.376 0 0.376 r
+(call)s
+0 g
+( plug#)s
+0.498 0.125 0.498 r
+(begin)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+("~/.vim/plugged")s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0.376 0 0.376 r
+(endif)59.5 172.4 ms
+(" Now the actual plugins:)59.5 152.4 ms
+(" Override configs by directory)59.5 132.4 ms
+0 g
+(Plug )59.5 122.4 ms
+0.376 0 0 r
+('arielrossanigo/dir-configs-override.vim')s
+0.376 0 0.376 r
+(" Code commenter)59.5 112.4 ms
+0 g
+(Plug )59.5 102.4 ms
+0.376 0 0 r
+('scrooloose/nerdcommenter')s
+0.376 0 0.376 r
+(" Better file browser)59.5 92.4 ms
+0 g
+(Plug )59.5 82.4 ms
+0.376 0 0 r
+('scrooloose/nerdtree')s
+0.376 0 0.376 r
+(" Class/module browser)59.5 72.4 ms
+0 g
+(Plug )59.5 62.4 ms
+0.376 0 0 r
+('majutsushi/tagbar')s
+0.376 0 0.376 r
+(" Search results counter)59.5 52.4 ms
+re sp
+%%PageTrailer
+%%Page: 2 2
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(init.vim                                                                      Page 2)59.5 792.4 ms
+F0 sf
+(Plug )59.5 772.4 ms
+0.376 0 0 r
+('vim-scripts/IndexedSearch')s
+0.376 0 0.376 r
+(" A couple of nice colorschemes)59.5 762.4 ms
+(" Plug 'fisadev/fisa-vim-colorscheme')59.5 752.4 ms
+0 g
+(Plug )59.5 742.4 ms
+0.376 0 0 r
+('patstockwell/vim-monokai-tasty')s
+0.376 0 0.376 r
+(" Airline)59.5 732.4 ms
+0 g
+(Plug )59.5 722.4 ms
+0.376 0 0 r
+('vim-airline/vim-airline')s
+0 g
+(Plug )59.5 712.4 ms
+0.376 0 0 r
+('vim-airline/vim-airline-themes')s
+0.376 0 0.376 r
+(" Code and files fuzzy finder)59.5 702.4 ms
+0 g
+(Plug )59.5 692.4 ms
+0.376 0 0 r
+('junegunn/fzf')s
+0 g
+(, )s
+0.376 0 0.376 r
+({)s
+0 0 0.376 r
+( )s
+0.376 0 0 r
+('dir')s
+0 0 0.376 r
+(: )s
+0.376 0 0 r
+('~/.fzf')s
+0 0 0.376 r
+(, )s
+0.376 0 0 r
+('do')s
+0 0 0.376 r
+(: )s
+0.376 0 0 r
+('./install --all')s
+0 0 0.376 r
+( )s
+0.376 0 0.376 r
+(})s
+0 g
+(Plug )59.5 682.4 ms
+0.376 0 0 r
+('junegunn/fzf.vim')s
+0.376 0 0.376 r
+(" Pending tasks list)59.5 672.4 ms
+0 g
+(Plug )59.5 662.4 ms
+0.376 0 0 r
+('fisadev/FixedTaskList.vim')s
+0.376 0 0.376 r
+(" Async autocompletion)59.5 652.4 ms
+(if)59.5 642.4 ms
+0 g
+( using_neovim )s
+0.376 0 0.376 r
+(&&)s
+0 g
+( vim_plug_just_installed)s
+(    Plug )59.5 632.4 ms
+0.376 0 0 r
+('Shougo/deoplete.nvim')s
+0 g
+(, )s
+0.376 0 0.376 r
+({)s
+0.376 0 0 r
+('do')s
+0 0 0.376 r
+(: )s
+0.376 0 0 r
+(':autocmd VimEnter * UpdateRemotePlugins')s
+0.376 0 0.376 r
+(})s
+(else)59.5 622.4 ms
+0 g
+(    Plug )59.5 612.4 ms
+0.376 0 0 r
+('Shougo/deoplete.nvim')s
+0.376 0 0.376 r
+(endif)59.5 602.4 ms
+0 g
+(Plug )59.5 592.4 ms
+0.376 0 0 r
+('roxma/nvim-yarp')s
+0 g
+(Plug )59.5 582.4 ms
+0.376 0 0 r
+('roxma/vim-hug-neovim-rpc')s
+0.376 0 0.376 r
+(" Python autocompletion)59.5 572.4 ms
+0 g
+(Plug )59.5 562.4 ms
+0.376 0 0 r
+('deoplete-plugins/deoplete-jedi')s
+0.376 0 0.376 r
+(" Completion from other opened files)59.5 552.4 ms
+0 g
+(Plug )59.5 542.4 ms
+0.376 0 0 r
+('Shougo/context_filetype.vim')s
+0.376 0 0.376 r
+(" Just to add the python go-to-definition and similar features, autocompletion)59.5 532.4 ms
+(" from this plugin is disabled)59.5 522.4 ms
+0 g
+(Plug )59.5 512.4 ms
+0.376 0 0 r
+('davidhalter/jedi-vim')s
+0.376 0 0.376 r
+(" Automatically close parenthesis, etc)59.5 502.4 ms
+0 g
+(Plug )59.5 492.4 ms
+0.376 0 0 r
+('Townk/vim-autoclose')s
+0.376 0 0.376 r
+(" Surround)59.5 482.4 ms
+0 g
+(Plug )59.5 472.4 ms
+0.376 0 0 r
+('tpope/vim-surround')s
+0.376 0 0.376 r
+(" Indent text object)59.5 462.4 ms
+0 g
+(Plug )59.5 452.4 ms
+0.376 0 0 r
+('michaeljsmith/vim-indent-object')s
+0.376 0 0.376 r
+(" Indentation based movements)59.5 442.4 ms
+0 g
+(Plug )59.5 432.4 ms
+0.376 0 0 r
+('jeetsukumaran/vim-indentwise')s
+0.376 0 0.376 r
+(" Better language packs)59.5 422.4 ms
+0 g
+(Plug )59.5 412.4 ms
+0.376 0 0 r
+('sheerun/vim-polyglot')s
+0.376 0 0.376 r
+(" Ack code search \(requires ack installed in the system\))59.5 402.4 ms
+0 g
+(Plug )59.5 392.4 ms
+0.376 0 0 r
+('mileszs/ack.vim')s
+0.376 0 0.376 r
+(" Paint css colors with the real color)59.5 382.4 ms
+0 g
+(Plug )59.5 372.4 ms
+0.376 0 0 r
+('lilydjwg/colorizer')s
+0.376 0 0.376 r
+(" Window chooser)59.5 362.4 ms
+0 g
+(Plug )59.5 352.4 ms
+0.376 0 0 r
+('t9md/vim-choosewin')s
+0.376 0 0.376 r
+(" Automatically sort python imports)59.5 342.4 ms
+0 g
+(Plug )59.5 332.4 ms
+0.376 0 0 r
+('fisadev/vim-isort')s
+0.376 0 0.376 r
+(" Highlight matching html tags)59.5 322.4 ms
+0 g
+(Plug )59.5 312.4 ms
+0.376 0 0 r
+('valloric/MatchTagAlways')s
+0.376 0 0.376 r
+(" Generate html in a simple way)59.5 302.4 ms
+0 g
+(Plug )59.5 292.4 ms
+0.376 0 0 r
+('mattn/emmet-vim')s
+0.376 0 0.376 r
+(" Git integration)59.5 282.4 ms
+0 g
+(Plug )59.5 272.4 ms
+0.376 0 0 r
+('tpope/vim-fugitive')s
+0.376 0 0.376 r
+(" Git/mercurial/others diff icons on the side of the file lines)59.5 262.4 ms
+0 g
+(Plug )59.5 252.4 ms
+0.376 0 0 r
+('mhinz/vim-signify')s
+0.376 0 0.376 r
+(" Yank history navigation)59.5 242.4 ms
+0 g
+(Plug )59.5 232.4 ms
+0.376 0 0 r
+('vim-scripts/YankRing.vim')s
+0.376 0 0.376 r
+(" Linters)59.5 222.4 ms
+0 g
+(Plug )59.5 212.4 ms
+0.376 0 0 r
+('neomake/neomake')s
+0.376 0 0.376 r
+(" Relative numbering of lines \(0 is the current line\))59.5 202.4 ms
+(" \(disabled by default because is very intrusive and can't be easily toggled)59.5 192.4 ms
+(" on/off. When the plugin is present, will always activate the relative)59.5 182.4 ms
+(" numbering every time you go to normal mode. Author refuses to add a setting)59.5 172.4 ms
+(" to avoid that\))59.5 162.4 ms
+0 g
+(Plug )59.5 152.4 ms
+0.376 0 0 r
+('myusuf3/numbers.vim')s
+0.376 0 0.376 r
+(" Nice icons in the file explorer and file type status line.)59.5 142.4 ms
+0 g
+(Plug )59.5 132.4 ms
+0.376 0 0 r
+('ryanoasis/vim-devicons')s
+0.376 0 0.376 r
+(")59.5 122.4 ms
+("GraphQL plugin)59.5 112.4 ms
+0 g
+(Plug )59.5 102.4 ms
+0.376 0 0 r
+('jparise/vim-graphql')s
+0.376 0 0.376 r
+(")59.5 92.4 ms
+(if)59.5 82.4 ms
+0 g
+( using_vim)s
+0.376 0 0.376 r
+(    " Consoles as buffers \(neovim has its own consoles as buffers\))59.5 72.4 ms
+0 g
+(    Plug )59.5 62.4 ms
+0.376 0 0 r
+('rosenfeld/conque-term')s
+0.376 0 0.376 r
+(    " XML/HTML tags navigation \(neovim has its own\))59.5 52.4 ms
+re sp
+%%PageTrailer
+%%Page: 3 3
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(init.vim                                                                      Page 3)59.5 792.4 ms
+F0 sf
+(    Plug )59.5 772.4 ms
+0.376 0 0 r
+('vim-scripts/matchit.zip')s
+0.376 0 0.376 r
+(endif)59.5 762.4 ms
+(" Code searcher. If you enable it, you should also configure g:hound_base_url )59.5 742.4 ms
+(" and g:hound_port, pointing to your hound instance)59.5 732.4 ms
+(" Plug 'mattn/webapi-vim')59.5 722.4 ms
+(" Plug 'jfo/hound.vim')59.5 712.4 ms
+(" Tell vim-plug we finished declaring plugins, so it can load them)59.5 692.4 ms
+(call)59.5 682.4 ms
+0 g
+( plug#)s
+0.498 0.125 0.498 r
+(end)s
+F1 sf
+0.376 g
+(\(\))s
+F0 sf
+0.376 0 0.376 r
+(" ============================================================================)59.5 662.4 ms
+(" Install plugins the first time vim runs)59.5 652.4 ms
+(if)59.5 632.4 ms
+0 g
+( vim_plug_just_installed)s
+(    )59.5 622.4 ms
+0.376 0 0.376 r
+(echo)s
+0 g
+( )s
+0.376 0 0 r
+("Installing Bundles, please ignore key map error messages")s
+0 g
+(    :PlugInstall)59.5 612.4 ms
+0.376 0 0.376 r
+(endif)59.5 602.4 ms
+(" ============================================================================)59.5 582.4 ms
+(" Vim settings and mappings)59.5 572.4 ms
+(" You can edit them as you wish)59.5 562.4 ms
+0 g
+( )59.5 552.4 ms
+0.376 0 0.376 r
+(if)59.5 542.4 ms
+0 g
+( using_vim)s
+0.376 0 0.376 r
+(    " A bunch of things that are set by default in neovim, but not in vim)59.5 532.4 ms
+(    " no vi-compatible)59.5 512.4 ms
+0 g
+(    )59.5 502.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( nocompatible)s
+0.376 0 0.376 r
+(    " allow plugins by file type \(required for plugins!\))59.5 482.4 ms
+0 g
+(    )59.5 472.4 ms
+0.376 0 0.376 r
+(filetype)s
+0 g
+( plugin on)s
+(    )59.5 462.4 ms
+0.376 0 0.376 r
+(filetype)s
+0 g
+( indent on)s
+0.376 0 0.376 r
+(    " always show status bar)59.5 442.4 ms
+0 g
+(    )59.5 432.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( )s
+0.376 0 0.376 r
+(ls)s
+0 g
+(=2)s
+0.376 0 0.376 r
+(    " incremental search)59.5 412.4 ms
+0 g
+(    )59.5 402.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( )s
+0.376 0 0.376 r
+(incsearch)s
+(    " highlighted search results)59.5 392.4 ms
+0 g
+(    )59.5 382.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( )s
+0.376 0 0.376 r
+(hlsearch)s
+(    " syntax highlight on)59.5 362.4 ms
+0 g
+(    )59.5 352.4 ms
+0.376 0 0.376 r
+(syntax)s
+0 g
+( on)s
+0.376 0 0.376 r
+(    " better backup, swap and undos storage for vim \(nvim has nice ones by)59.5 332.4 ms
+(    " default\))59.5 322.4 ms
+0 g
+(    )59.5 312.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( )s
+0.376 0 0.376 r
+(directory)s
+0 g
+(=~/.vim/dirs/tmp     )s
+0.376 0 0.376 r
+(" directory to place swap files in)s
+0 g
+(    )59.5 302.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( )s
+0.376 0 0.376 r
+(backup)s
+0 g
+(                        )s
+0.376 0 0.376 r
+(" make backup files)s
+0 g
+(    )59.5 292.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( )s
+0.376 0 0.376 r
+(backupdir)s
+0 g
+(=~/.vim/dirs/backups )s
+0.376 0 0.376 r
+(" where to put backup files)s
+0 g
+(    )59.5 282.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( )s
+0.376 0 0.376 r
+(undofile)s
+0 g
+(                      )s
+0.376 0 0.376 r
+(" persistent undos - undo after you re-open th)s
+(e file)59.5 272.4 ms
+0 g
+(    )59.5 262.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( )s
+0.376 0 0.376 r
+(undodir)s
+0 g
+(=~/.vim/dirs/undos)s
+(    )59.5 252.4 ms
+0.376 0 0.376 r
+(set)s
+0 g
+( )s
+0.376 0 0.376 r
+(viminfo)s
+0 g
+(+=n~/.vim/dirs/viminfo)s
+0.376 0 0.376 r
+(    " create needed directories if they don't exist)59.5 242.4 ms
+0 g
+(    )59.5 232.4 ms
+0.376 0 0.376 r
+(if)s
+0 g
+( !)s
+0.376 0 0 r
+(isdirectory)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(&backupdir)s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(        )59.5 222.4 ms
+0.376 0 0.376 r
+(call)s
+0 g
+( )s
+0.376 0 0 r
+(mkdir)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(&backupdir, )s
+0.376 0 0 r
+("p")s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(    )59.5 212.4 ms
+0.376 0 0.376 r
+(endif)s
+0 g
+(    )59.5 202.4 ms
+0.376 0 0.376 r
+(if)s
+0 g
+( !)s
+0.376 0 0 r
+(isdirectory)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(&directory)s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(        )59.5 192.4 ms
+0.376 0 0.376 r
+(call)s
+0 g
+( )s
+0.376 0 0 r
+(mkdir)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(&directory, )s
+0.376 0 0 r
+("p")s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(    )59.5 182.4 ms
+0.376 0 0.376 r
+(endif)s
+0 g
+(    )59.5 172.4 ms
+0.376 0 0.376 r
+(if)s
+0 g
+( !)s
+0.376 0 0 r
+(isdirectory)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(&undodir)s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(        )59.5 162.4 ms
+0.376 0 0.376 r
+(call)s
+0 g
+( )s
+0.376 0 0 r
+(mkdir)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(&undodir, )s
+0.376 0 0 r
+("p")s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(    )59.5 152.4 ms
+0.376 0 0.376 r
+(endif)s
+(end)59.5 142.4 ms
+(" tabs and spaces handling)59.5 122.4 ms
+(set)59.5 112.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(expandtab)s
+(set)59.5 102.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(tabstop)s
+0 g
+(=4)s
+0.376 0 0.376 r
+(set)59.5 92.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(softtabstop)s
+0 g
+(=4)s
+0.376 0 0.376 r
+(set)59.5 82.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(shiftwidth)s
+0 g
+(=4)s
+0.376 0 0.376 r
+(" show line numbers)59.5 62.4 ms
+(set)59.5 52.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(nu)s
+re sp
+%%PageTrailer
+%%Page: 4 4
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(init.vim                                                                      Page 4)59.5 792.4 ms
+F0 sf
+0.376 0 0.376 r
+(" remove ugly vertical lines on window division)59.5 762.4 ms
+(set)59.5 752.4 ms
+0 g
+( fillchars)s
+0.376 0 0.376 r
+(+=vert)s
+0 g
+(:\\ )s
+0.376 0 0.376 r
+(" use 256 colors when possible)59.5 732.4 ms
+(if)59.5 722.4 ms
+0 g
+( )s
+0.376 0 0 r
+(has)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+('gui_running')s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+( )s
+0.376 0 0.376 r
+(||)s
+0 g
+( using_neovim )s
+0.376 0 0.376 r
+(||)s
+0 g
+( )s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(&term )s
+0.376 0 0.376 r
+(=~?)s
+0 0 0.376 r
+( )s
+0.376 0 0 r
+('mlterm\\|xterm\\|xterm-256\\|scree)s
+(n-256')59.5 712.4 ms
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(    )59.5 702.4 ms
+0.376 0 0.376 r
+(if)s
+0 g
+( !)s
+0.376 0 0 r
+(has)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+('gui_running')s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(        )59.5 692.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( &t_Co )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(256)s
+0 g
+(    )59.5 682.4 ms
+0.376 0 0.376 r
+(endif)s
+0 g
+(    )59.5 672.4 ms
+0.376 0 0.376 r
+(colorscheme)s
+0 g
+( )s
+0.376 0 0.376 r
+(vim-)s
+0 g
+(monokai)s
+0.376 0 0.376 r
+(-)s
+0 g
+(tasty)s
+0.376 0 0.376 r
+(else)59.5 662.4 ms
+0 g
+(    )59.5 652.4 ms
+0.376 0 0.376 r
+(colorscheme)s
+0 g
+( delek)s
+0.376 0 0.376 r
+(endif)59.5 642.4 ms
+(" needed so deoplete can auto select the first suggestion)59.5 622.4 ms
+(set)59.5 612.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(completeopt)s
+0 g
+(+=noinsert)s
+0.376 0 0.376 r
+(" comment this line to enable autocompletion preview window)59.5 602.4 ms
+(" \(displays documentation related to the selected completion option\))59.5 592.4 ms
+(" disabled by default because preview makes the window flicker)59.5 582.4 ms
+(" bobik)59.5 572.4 ms
+(" set completeopt-=preview)59.5 562.4 ms
+(" autocompletion of files and commands behaves like shell)59.5 542.4 ms
+(" \(complete only the common part, list the options that match\))59.5 532.4 ms
+(set)59.5 522.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(wildmode)s
+0 g
+(=list)s
+0.376 0 0.376 r
+(:)s
+0 g
+(longest)s
+0.376 0 0.376 r
+(" save as sudo)59.5 502.4 ms
+(ca)59.5 492.4 ms
+0 g
+( w!! w !sudo tee "%")s
+0.376 0 0.376 r
+(" tab navigation mappings)59.5 472.4 ms
+(map)59.5 462.4 ms
+0 g
+( tt :tabnew )s
+0.376 0 0.376 r
+(map)59.5 452.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(M-Right)s
+0.376 0 0.376 r
+(>)s
+0 g
+( :tabn)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(imap)59.5 442.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(M-Right)s
+0.376 0 0.376 r
+(>)s
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(ESC)s
+0.376 0 0.376 r
+(>)s
+0 g
+(:tabn)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(map)59.5 432.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(M-Left)s
+0.376 0 0.376 r
+(>)s
+0 g
+( :tabp)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(imap)59.5 422.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(M-Left)s
+0.376 0 0.376 r
+(>)s
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(ESC)s
+0.376 0 0.376 r
+(>)s
+0 g
+(:tabp)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" when scrolling, keep cursor 3 lines away from screen border)59.5 402.4 ms
+(set)59.5 392.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(scrolloff)s
+0 g
+(=3)s
+0.376 0 0.376 r
+(" clear search results)59.5 372.4 ms
+(nnoremap)59.5 362.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(silent)s
+0.376 0 0.376 r
+(>)s
+0 g
+( // :noh)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" clear empty spaces at the end of lines on save of python files)59.5 342.4 ms
+(autocmd)59.5 332.4 ms
+0 g
+( BufWritePre *.py :)s
+0.498 0.125 0.498 r
+(%)s
+0.376 0 0.376 r
+(s/)s
+0 g
+(\\s\\+$)s
+0.376 0 0.376 r
+(//)s
+0.498 0.125 0.498 r
+(e)s
+0.376 0 0.376 r
+(" fix problems with uncommon shells \(fish, xonsh\) and plugins running commands)59.5 312.4 ms
+(" \(neomake, ...\))59.5 302.4 ms
+(set)59.5 292.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(shell)s
+0 g
+(=/bin/bash )s
+0.376 0 0.376 r
+(" Ability to add python breakpoints)59.5 272.4 ms
+(" \(I use ipdb, but you can change it to whatever tool you use for debugging\))59.5 262.4 ms
+(au)59.5 252.4 ms
+0 g
+( FileType python )s
+0.376 0 0.376 r
+(map)s
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(silent)s
+0.376 0 0.376 r
+(>)s
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(leader)s
+0.376 0 0.376 r
+(>)s
+0 g
+(b Oimport ipdb; ipdb.set_trace\(\))s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(esc)s
+0.376 0 0.376 r
+(>)s
+(" ============================================================================)59.5 232.4 ms
+(" Plugins settings and mappings)59.5 222.4 ms
+(" Edit them as you wish.)59.5 212.4 ms
+(" Tagbar -----------------------------)59.5 192.4 ms
+(" toggle tagbar display)59.5 172.4 ms
+(map)59.5 162.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(F4)s
+0.376 0 0.376 r
+(>)s
+0 g
+( :TagbarToggle)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" autofocus on tagbar open)59.5 152.4 ms
+(let)59.5 142.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:tagbar_autofocus)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+(" NERDTree -----------------------------)59.5 122.4 ms
+(" toggle nerdtree display)59.5 102.4 ms
+(map)59.5 92.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(F3)s
+0.376 0 0.376 r
+(>)s
+0 g
+( :NERDTreeToggle)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" open nerdtree with the current file selected)59.5 82.4 ms
+(nmap)59.5 72.4 ms
+0 g
+( ,t :NERDTreeFind)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" don;t show these file types)59.5 62.4 ms
+(let)59.5 52.4 ms
+0 g
+( )s
+0 0 0.376 r
+(NERDTreeIgnore)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( [)s
+0.376 0 0 r
+('\\.pyc$')s
+0 g
+(, )s
+0.376 0 0 r
+('\\.pyo$')s
+0 g
+(])s
+re sp
+%%PageTrailer
+%%Page: 5 5
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(init.vim                                                                      Page 5)59.5 792.4 ms
+F0 sf
+0.376 0 0.376 r
+(" Enable folder icons)59.5 762.4 ms
+(let)59.5 752.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:WebDevIconsUnicodeDecorateFolderNodes)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+(let)59.5 742.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:DevIconsEnableFoldersOpenClose)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+("bobik)59.5 732.4 ms
+(let)59.5 722.4 ms
+0 g
+( )s
+0 0 0.376 r
+(NERDTreeShowHidden)s
+0.376 0 0.376 r
+(=)s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+(" Fix directory colors)59.5 712.4 ms
+(highlight)59.5 702.4 ms
+0 g
+(! link NERDTreeFlags NERDTreeDir)s
+0.376 0 0.376 r
+(" Remove expandable arrow)59.5 682.4 ms
+(let)59.5 672.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:WebDevIconsNerdTreeBeforeGlyphPadding)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+("")s
+0.376 0 0.376 r
+(let)59.5 662.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:WebDevIconsUnicodeDecorateFolderNodes)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0 0 0.376 r
+(v:true)s
+0.376 0 0.376 r
+(let)59.5 652.4 ms
+0 g
+( )s
+0 0 0.376 r
+(NERDTreeDirArrowExpandable)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+("\\u00a0")s
+0.376 0 0.376 r
+(let)59.5 642.4 ms
+0 g
+( )s
+0 0 0.376 r
+(NERDTreeDirArrowCollapsible)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+("\\u00a0")s
+0.376 0 0.376 r
+(let)59.5 632.4 ms
+0 g
+( )s
+0 0 0.376 r
+(NERDTreeNodeDelimiter)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+("\\x07")s
+0.376 0 0.376 r
+(" Autorefresh on tree focus)59.5 612.4 ms
+(function)59.5 602.4 ms
+0 g
+(! NERDTreeRefresh)s
+F1 sf
+0.376 g
+(\(\))s
+F0 sf
+0 g
+(    )59.5 592.4 ms
+0.376 0 0.376 r
+(if)s
+0 g
+( &)s
+0.376 0 0.376 r
+(filetype)s
+0 g
+( )s
+0.376 0 0.376 r
+(==)s
+0 g
+( )s
+0.376 0 0 r
+("nerdtree")s
+0 g
+(        )59.5 582.4 ms
+0.376 0 0.376 r
+(silent)s
+0 g
+( )s
+0.376 0 0.376 r
+(exe)s
+0 g
+( )s
+0 0 0.376 r
+(substitute)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+(mapcheck)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+("R")s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 0 0.376 r
+(, )s
+0.376 0 0 r
+("<CR>")s
+0 0 0.376 r
+(, )s
+0.376 0 0 r
+("")s
+0 0 0.376 r
+(, )s
+0.376 0 0 r
+("")s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(    )59.5 572.4 ms
+0.376 0 0.376 r
+(endif)s
+(endfunction)59.5 562.4 ms
+(autocmd)59.5 542.4 ms
+0 g
+( BufEnter * )s
+0.376 0 0.376 r
+(call)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(NERDTreeRefresh)s
+F1 sf
+0.376 g
+(\(\))s
+F0 sf
+0.376 0 0.376 r
+(" Tasklist ------------------------------)59.5 522.4 ms
+(" show pending tasks list)59.5 502.4 ms
+(map)59.5 492.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(F2)s
+0.376 0 0.376 r
+(>)s
+0 g
+( :TaskList)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" Neomake ------------------------------)59.5 472.4 ms
+(" Run linter on write)59.5 452.4 ms
+(autocmd)59.5 442.4 ms
+0 g
+(! BufWritePost * Neomake)s
+0.376 0 0.376 r
+(" Check code as python3 by default)59.5 422.4 ms
+(let)59.5 412.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:neomake_python_python_maker)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( neomake#makers#ft#python#)s
+0.498 0.125 0.498 r
+(python)s
+F1 sf
+0.376 g
+(\(\))s
+F0 sf
+0.376 0 0.376 r
+(let)59.5 402.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:neomake_python_flake8_maker)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( neomake#makers#ft#python#)s
+0.498 0.125 0.498 r
+(flake8)s
+F1 sf
+0.376 g
+(\(\))s
+F0 sf
+0.376 0 0.376 r
+(let)59.5 392.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:neomake_python_python_maker)s
+0.376 0 0.376 r
+(.exe)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('python3 -m py_compile')s
+0.376 0 0.376 r
+(let)59.5 382.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:neomake_python_flake8_maker)s
+0.376 0 0.376 r
+(.exe)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('python3 -m flake8')s
+0.376 0 0.376 r
+(" Disable error messages inside the buffer, next to the problematic line)59.5 362.4 ms
+(let)59.5 352.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:neomake_virtualtext_current_error)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(0)s
+0.376 0 0.376 r
+(" Fzf ------------------------------)59.5 332.4 ms
+(" file finder mapping)59.5 312.4 ms
+(nmap)59.5 302.4 ms
+0 g
+( ,e :Files)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" tags \(symbols\) in current file finder mapping)59.5 292.4 ms
+(nmap)59.5 282.4 ms
+0 g
+( ,g :BTag)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" the same, but with the word under the cursor pre filled)59.5 272.4 ms
+(nmap)59.5 262.4 ms
+0 g
+( ,wg :execute ":BTag " . expand\(')s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(cword)s
+0.376 0 0.376 r
+(>)s
+0 g
+('\))s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" tags \(symbols\) in all files finder mapping)59.5 252.4 ms
+(nmap)59.5 242.4 ms
+0 g
+( ,G :Tags)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" the same, but with the word under the cursor pre filled)59.5 232.4 ms
+(nmap)59.5 222.4 ms
+0 g
+( ,wG :execute ":Tags " . expand\(')s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(cword)s
+0.376 0 0.376 r
+(>)s
+0 g
+('\))s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" general code finder in current file mapping)59.5 212.4 ms
+(nmap)59.5 202.4 ms
+0 g
+( ,f :BLines)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" the same, but with the word under the cursor pre filled)59.5 192.4 ms
+(nmap)59.5 182.4 ms
+0 g
+( ,wf :execute ":BLines " . expand\(')s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(cword)s
+0.376 0 0.376 r
+(>)s
+0 g
+('\))s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" general code finder in all files mapping)59.5 172.4 ms
+(nmap)59.5 162.4 ms
+0 g
+( ,F :Lines)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" the same, but with the word under the cursor pre filled)59.5 152.4 ms
+(nmap)59.5 142.4 ms
+0 g
+( ,wF :execute ":Lines " . expand\(')s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(cword)s
+0.376 0 0.376 r
+(>)s
+0 g
+('\))s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" commands finder mapping)59.5 132.4 ms
+(nmap)59.5 122.4 ms
+0 g
+( ,c :Commands)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" Deoplete -----------------------------)59.5 102.4 ms
+(" Use deoplete.)59.5 82.4 ms
+(let)59.5 72.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:deoplete#enable_at_startup)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+(let)59.5 62.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:deoplete#enable_ignore_case)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+(let)59.5 52.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:deoplete#enable_smart_case)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+re sp
+%%PageTrailer
+%%Page: 6 6
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(init.vim                                                                      Page 6)59.5 792.4 ms
+F0 sf
+0.376 0 0.376 r
+(" complete with words from any opened file)59.5 772.4 ms
+(let)59.5 762.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:context_filetype#same_filetypes)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0.376 r
+({})s
+(let)59.5 752.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:context_filetype#same_filetypes)s
+0.376 0 0.376 r
+(.)s
+0 g
+(_ )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('_')s
+0.376 0 0.376 r
+(" Jedi-vim ------------------------------)59.5 732.4 ms
+(" Disable autocompletion \(using deoplete instead\))59.5 712.4 ms
+(let)59.5 702.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:jedi#completions_enabled)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(0)s
+0.376 0 0.376 r
+(" All these mappings work only for python code:)59.5 682.4 ms
+(" Go to definition)59.5 672.4 ms
+(let)59.5 662.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:jedi#goto_command)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+(',d')s
+0.376 0 0.376 r
+(" Find ocurrences)59.5 652.4 ms
+(let)59.5 642.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:jedi#usages_command)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+(',o')s
+0.376 0 0.376 r
+(" Find assignments)59.5 632.4 ms
+(let)59.5 622.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:jedi#goto_assignments_command)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+(',a')s
+0.376 0 0.376 r
+(" Go to definition in new tab)59.5 612.4 ms
+(nmap)59.5 602.4 ms
+0 g
+( ,D :tab split)s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+0 g
+(:call jedi#goto\(\))s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+(" Ack.vim ------------------------------)59.5 582.4 ms
+(" mappings)59.5 562.4 ms
+(nmap)59.5 552.4 ms
+0 g
+( ,r :Ack )s
+0.376 0 0.376 r
+(nmap)59.5 542.4 ms
+0 g
+( ,wr :execute ":Ack " . expand\(')s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(cword)s
+0.376 0 0.376 r
+(>)s
+0 g
+('\))s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(CR)s
+0.376 0 0.376 r
+(>)s
+("bobik)59.5 532.4 ms
+(nnoremap)59.5 522.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(buffer)s
+0.376 0 0.376 r
+(>)s
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(F9)s
+0.376 0 0.376 r
+(>)s
+0 g
+( :w )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(bar)s
+0.376 0 0.376 r
+(>)s
+0 g
+( :exec '!python' shellescape\(@%, 1\))s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(cr)s
+0.376 0 0.376 r
+(>)s
+(nnoremap)59.5 512.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(buffer)s
+0.376 0 0.376 r
+(>)s
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(F5)s
+0.376 0 0.376 r
+(>)s
+0 g
+( :w )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(bar)s
+0.376 0 0.376 r
+(>)s
+0 g
+( :exec '!/home/sasha/GAMSLINUX/gams' shellescape\(@%, )s
+(1\))59.5 502.4 ms
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(cr)s
+0.376 0 0.376 r
+(>)s
+(au)59.5 492.4 ms
+0 g
+( BufNewFile,BufRead *.gms  )s
+0.376 0 0.376 r
+(setf)s
+0 g
+( gams)s
+0.376 0 0.376 r
+(")59.5 472.4 ms
+(" Window Chooser ------------------------------)59.5 462.4 ms
+(" mapping)59.5 442.4 ms
+(nmap)59.5 432.4 ms
+0 g
+(  -  )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(Plug)s
+0.376 0 0.376 r
+(>)s
+0 g
+(\(choosewin\))s
+0.376 0 0.376 r
+(" show big letters)59.5 422.4 ms
+(let)59.5 412.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:choosewin_overlay_enable)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+(" Signify ------------------------------)59.5 392.4 ms
+(" this first setting decides in which order try to guess your current vcs)59.5 372.4 ms
+(" UPDATE it to reflect your preferences, it will speed up opening files)59.5 362.4 ms
+(let)59.5 352.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:signify_vcs_list)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( [)s
+0.376 0 0 r
+('git')s
+0 g
+(, )s
+0.376 0 0 r
+('hg')s
+0 g
+(])s
+0.376 0 0.376 r
+(" mappings to jump to changed blocks)59.5 342.4 ms
+(nmap)59.5 332.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(leader)s
+0.376 0 0.376 r
+(>)s
+0 g
+(sn )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(plug)s
+0.376 0 0.376 r
+(>)s
+0 g
+(\(signify-next-hunk\))s
+0.376 0 0.376 r
+(nmap)59.5 322.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(leader)s
+0.376 0 0.376 r
+(>)s
+0 g
+(sp )s
+0.376 0 0.376 r
+(<)s
+0.498 0.125 0.498 r
+(plug)s
+0.376 0 0.376 r
+(>)s
+0 g
+(\(signify-prev-hunk\))s
+0.376 0 0.376 r
+(" nicer colors)59.5 312.4 ms
+(highlight)59.5 302.4 ms
+0 g
+( DiffAdd           cterm=)s
+0.376 0 0.376 r
+(bold)s
+0 g
+( ctermbg=)s
+0.376 0 0.376 r
+(none)s
+0 g
+( ctermfg=)s
+0.498 0.125 0.498 r
+(119)s
+0.376 0 0.376 r
+(highlight)59.5 292.4 ms
+0 g
+( DiffDelete        cterm=)s
+0.376 0 0.376 r
+(bold)s
+0 g
+( ctermbg=)s
+0.376 0 0.376 r
+(none)s
+0 g
+( ctermfg=)s
+0.498 0.125 0.498 r
+(167)s
+0.376 0 0.376 r
+(highlight)59.5 282.4 ms
+0 g
+( DiffChange        cterm=)s
+0.376 0 0.376 r
+(bold)s
+0 g
+( ctermbg=)s
+0.376 0 0.376 r
+(none)s
+0 g
+( ctermfg=)s
+0.498 0.125 0.498 r
+(227)s
+0.376 0 0.376 r
+(highlight)59.5 272.4 ms
+0 g
+( SignifySignAdd    cterm=)s
+0.376 0 0.376 r
+(bold)s
+0 g
+( ctermbg=)s
+0.498 0.125 0.498 r
+(237)s
+0 g
+(  ctermfg=)s
+0.498 0.125 0.498 r
+(119)s
+0.376 0 0.376 r
+(highlight)59.5 262.4 ms
+0 g
+( SignifySignDelete cterm=)s
+0.376 0 0.376 r
+(bold)s
+0 g
+( ctermbg=)s
+0.498 0.125 0.498 r
+(237)s
+0 g
+(  ctermfg=)s
+0.498 0.125 0.498 r
+(167)s
+0.376 0 0.376 r
+(highlight)59.5 252.4 ms
+0 g
+( SignifySignChange cterm=)s
+0.376 0 0.376 r
+(bold)s
+0 g
+( ctermbg=)s
+0.498 0.125 0.498 r
+(237)s
+0 g
+(  ctermfg=)s
+0.498 0.125 0.498 r
+(227)s
+0.376 0 0.376 r
+(" Autoclose ------------------------------)59.5 232.4 ms
+(" Fix to let ESC work as espected with Autoclose plugin)59.5 212.4 ms
+(" \(without this, when showing an autocompletion window, ESC won't leave insert)59.5 202.4 ms
+("  mode\))59.5 192.4 ms
+(let)59.5 182.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:AutoClosePumvisible)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0.376 r
+({)s
+0.376 0 0 r
+("ENTER")s
+0 0 0.376 r
+(: )s
+0.376 0 0 r
+("\\<C-Y>")s
+0 0 0.376 r
+(, )s
+0.376 0 0 r
+("ESC")s
+0 0 0.376 r
+(: )s
+0.376 0 0 r
+("\\<ESC>")s
+0.376 0 0.376 r
+(})s
+(" Yankring -------------------------------)59.5 162.4 ms
+(if)59.5 142.4 ms
+0 g
+( using_neovim)s
+(    )59.5 132.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:yankring_history_dir)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('~/.config/nvim/')s
+0.376 0 0.376 r
+(    " Fix for yankring and neovim problem when system has non-text things)59.5 122.4 ms
+(    " copied in clipboard)59.5 112.4 ms
+0 g
+(    )59.5 102.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:yankring_clipboard_monitor)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(0)s
+0.376 0 0.376 r
+(else)59.5 92.4 ms
+0 g
+(    )59.5 82.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:yankring_history_dir)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('~/.vim/dirs/')s
+0.376 0 0.376 r
+(endif)59.5 72.4 ms
+(" Airline ------------------------------)59.5 52.4 ms
+re sp
+%%PageTrailer
+%%Page: 7 7
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(init.vim                                                                      Page 7)59.5 792.4 ms
+F0 sf
+0.376 0 0.376 r
+(let)59.5 762.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:airline_powerline_fonts)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(0)s
+0.376 0 0.376 r
+(let)59.5 752.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:airline_theme)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('bubblegum')s
+0.376 0 0.376 r
+(let)59.5 742.4 ms
+0 g
+( )s
+0 0 0.376 r
+(g:airline#extensions#whitespace#enabled)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(0)s
+0.376 0 0.376 r
+(" Fancy Symbols!!)59.5 722.4 ms
+(if)59.5 702.4 ms
+0 g
+( fancy_symbols_enabled)s
+(    )59.5 692.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:webdevicons_enable)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(1)s
+0.376 0 0.376 r
+(    " custom airline symbols)59.5 672.4 ms
+0 g
+(    )59.5 662.4 ms
+0.376 0 0.376 r
+(if)s
+0 g
+( !)s
+0.376 0 0 r
+(exists)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+('g:airline_symbols')s
+F1 sf
+0.376 g
+(\))s
+F0 sf
+0 g
+(       )59.5 652.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:airline_symbols)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0.376 r
+({})s
+0 g
+(    )59.5 642.4 ms
+0.376 0 0.376 r
+(endif)s
+0 g
+(    )59.5 632.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:airline_left_sep)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('¿')s
+0 g
+(    )59.5 622.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:airline_left_alt_sep)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('¿')s
+0 g
+(    )59.5 612.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:airline_right_sep)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('¿')s
+0 g
+(    )59.5 602.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:airline_right_alt_sep)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('¿')s
+0 g
+(    )59.5 592.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:airline_symbols)s
+0.376 0 0.376 r
+(.)s
+0 g
+(branch )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('¿')s
+0 g
+(    )59.5 582.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:airline_symbols)s
+0.376 0 0.376 r
+(.)s
+0 g
+(readonly )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('¿')s
+0 g
+(    )59.5 572.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:airline_symbols)s
+0.376 0 0.376 r
+(.)s
+0 g
+(linenr )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+('¿')s
+0.376 0 0.376 r
+(else)59.5 562.4 ms
+0 g
+(    )59.5 552.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(g:webdevicons_enable)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.498 0.125 0.498 r
+(0)s
+0.376 0 0.376 r
+(endif)59.5 542.4 ms
+(" Custom configurations ----------------)59.5 522.4 ms
+(" Include user's custom nvim configurations)59.5 502.4 ms
+(if)59.5 492.4 ms
+0 g
+( using_neovim)s
+(    )59.5 482.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(custom_configs_path)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+("~/.config/nvim/custom.vim")s
+0.376 0 0.376 r
+(else)59.5 472.4 ms
+0 g
+(    )59.5 462.4 ms
+0.376 0 0.376 r
+(let)s
+0 g
+( )s
+0 0 0.376 r
+(custom_configs_path)s
+0 g
+( )s
+0.376 0 0.376 r
+(=)s
+0 g
+( )s
+0.376 0 0 r
+("~/.vim/custom.vim")s
+0.376 0 0.376 r
+(endif)59.5 452.4 ms
+(if)59.5 442.4 ms
+0 g
+( )s
+0.376 0 0 r
+(filereadable)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0.376 0 0 r
+(expand)s
+F1 sf
+0.376 g
+(\()s
+F0 sf
+0 0 0.376 r
+(custom_configs_path)s
+F1 sf
+0.376 g
+(\)\))s
+F0 sf
+0 g
+(  )59.5 432.4 ms
+0.376 0 0.376 r
+(execute)s
+0 g
+( )s
+0.376 0 0 r
+("source ")s
+0 g
+( )s
+0.376 0 0.376 r
+(.)s
+0 g
+( )s
+0 0 0.376 r
+(custom_configs_path)s
+0.376 0 0.376 r
+(endif)59.5 422.4 ms
+re sp
+%%PageTrailer
+%%Trailer
+%%Pages: 7
+%%EOF
+
