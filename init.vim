@@ -62,6 +62,8 @@ endif
 " Now the actual plugins:
 "bobik
 Plug 'lervag/vimtex'
+"search and replace
+Plug 'skwp/greplace.vim'
 "end of bobik
 " Override configs by directory
 Plug 'arielrossanigo/dir-configs-override.vim'
@@ -358,13 +360,16 @@ nmap ,F :Lines<CR>
 nmap ,wF :execute ":Lines " . expand('<cword>')<CR>
 " commands finder mapping
 nmap ,c :Commands<CR>
-
+" general search Ag
+nmap ,l :Ag<CR>
+" general search Rg
+nmap <leader>x :Rg<Cr>
 " Deoplete -----------------------------
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
-let g:deoplete#enable_smart_case = 1
+let g:deoplete#custom#option = 1
 " complete with words from any opened file
 let g:context_filetype#same_filetypes = {}
 let g:context_filetype#same_filetypes._ = '_'
@@ -496,3 +501,9 @@ nnoremap <leader>v :!mupdf %:r.pdf &<CR><CR>
 
 " choosing default tex flavor
 let g:tex_flavor = 'latex'
+
+"bobok says - !!!fzf!!! - see help no fzf 
+" for greplace
+set grepprg=ag
+
+let g:grep_cmd_opts = '--line-numbers --noheading'
