@@ -61,6 +61,11 @@ endif
 
 " Now the actual plugins:
 "bobik
+"snippets
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+"tex edit
 Plug 'lervag/vimtex'
 "search and replace
 Plug 'skwp/greplace.vim'
@@ -172,6 +177,7 @@ endif
 " You can edit them as you wish
 "bobik
 let g:python3_host_prog = '/home/sasha/pythonchik_NVIM/bin/python'
+" for snipmate file
 "
 if using_vim
     " A bunch of things that are set by default in neovim, but not in vim
@@ -507,3 +513,8 @@ let g:tex_flavor = 'latex'
 set grepprg=ag
 
 let g:grep_cmd_opts = '--line-numbers --noheading'
+
+"snipmate config
+let g:snipMate = {}
+let g:snipMate.scope_aliases = {}
+let g:snipMate.scope_aliases['ruby'] = 'ruby,ruby-rails,ruby-1.9'
