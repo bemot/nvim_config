@@ -62,11 +62,10 @@ endif
 " Now the actual plugins:
 "bobik
 "Php-vim
-"Plug 'StanAngeloff/php.vim'
-"Plug 'arnaud-lb/vim-php-namespace'
-"vim surround and vim_close_tag
+Plug 'StanAngeloff/php.vim'
+Plug 'arnaud-lb/vim-php-namespace'
+"vim surround
 Plug 'tpope/vim-surround'
-Plug 'alvan/vim-closetag'
 "snippets
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -526,17 +525,17 @@ let g:snipMate.scope_aliases = {}
 let g:snipMate.scope_aliases['ruby'] = 'ruby,ruby-rails,ruby-1.9'
 
 "php stuff
-"function! IPhpInsertUse()
-"    call PhpInsertUse()
-"    call feedkeys('a',  'n')
-"endfunction
-"autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
-"autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
-"
-"function! IPhpExpandClass()
-"    call PhpExpandClass()
-"    call feedkeys('a', 'n')
-"endfunction
-"autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
-"autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
+
+function! IPhpExpandClass()
+    call PhpExpandClass()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 
