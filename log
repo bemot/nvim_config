@@ -1,1 +1,132 @@
 ERROR 2019-06-16T23:13:52.091 29577 tui_terminal_stop:350: TUI already stopped (race?)
+INFO  2020-10-24T19:44:51.679 19195 os_exit:581: Nvim exit: 0
+INFO  2020-10-24T19:44:51.735 19202 os_exit:581: Nvim exit: 0
+INFO  2020-10-24T19:44:51.769 19208 os_exit:581: Nvim exit: 0
+INFO  2020-10-24T19:47:08.825 19788 channel_create_event:204: new channel 3 (function provider#python3#Call[9]..remote#host#Require[10]..provider#pythonx#Require[14]..provider#Poll:6) : {"id": 3, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2020-10-24T19:47:08.951 19788 on_process_exit:393: exited: pid=19792 status=0 stoptime=0
+INFO  2020-10-24T19:47:09.014 19788 on_process_exit:393: exited: pid=19793 status=0 stoptime=0
+INFO  2020-10-24T19:47:09.210 19788 on_process_exit:393: exited: pid=19794 status=0 stoptime=0
+INFO  2020-10-24T19:47:09.368 19788 channel_create_event:204: new channel 4 (function provider#python#Call[9]..remote#host#Require[10]..provider#pythonx#Require[14]..provider#Poll:6) : {"id": 4, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2020-10-24T19:47:09.528 19788 channel_create_event:204: new channel 5 (function sy#start[32]..sy#repo#detect[4]..sy#repo#get_diff:19) : {"id": 5, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:47:09.536 19788 on_process_exit:393: exited: pid=19798 status=129 stoptime=0
+INFO  2020-10-24T19:47:09.541 19788 channel_create_event:204: new channel 6 (function remote#define#FunctionBootstrap[1]..remote#host#Require[10]..provider#pythonx#Require[14]..provider#Poll:6) : {"id": 6, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2020-10-24T19:47:09.637 19788 main:554: starting main loop
+INFO  2020-10-24T19:47:09.655 19788 channel_create_event:204: new channel 7 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[38]..airline#async#vcs_untracked[6]..airline#async#nvim_vcs_untracked:19) : {"id": 7, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:47:09.658 19788 channel_create_event:204: new channel 8 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[42]..airline#async#vcs_clean[6]..airline#async#nvim_vcs_clean:24) : {"id": 8, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:47:09.659 19788 on_process_exit:393: exited: pid=19801 status=128 stoptime=0
+INFO  2020-10-24T19:47:09.661 19788 on_process_exit:393: exited: pid=19802 status=128 stoptime=0
+INFO  2020-10-24T19:47:09.670 19788 on_process_exit:393: exited: pid=19803 status=0 stoptime=0
+INFO  2020-10-24T19:47:09.678 19788 on_process_exit:393: exited: pid=19804 status=0 stoptime=0
+INFO  2020-10-24T19:47:09.708 19788 on_process_exit:393: exited: pid=19805 status=0 stoptime=0
+INFO  2020-10-24T19:47:09.717 19788 on_process_exit:393: exited: pid=19806 status=0 stoptime=0
+INFO  2020-10-24T19:47:09.781 19788 on_process_exit:393: exited: pid=19807 status=0 stoptime=0
+INFO  2020-10-24T19:47:37.396 19788 channel_create_event:204: new channel 9 (function neomake#Make[21]..<SNR>212_Make[210]..<SNR>212_handle_next_job[53]..<SNR>212_MakeJob:116) : {"id": 9, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:47:37.445 19788 channel_create_event:204: new channel 10 (function neomake#Make[21]..<SNR>212_Make[210]..<SNR>212_handle_next_job[53]..<SNR>212_MakeJob:116) : {"id": 10, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:47:37.455 19788 on_process_exit:393: exited: pid=19814 status=0 stoptime=0
+INFO  2020-10-24T19:47:37.455 19788 on_process_exit:393: exited: pid=19815 status=0 stoptime=0
+INFO  2020-10-24T19:47:37.472 19788 channel_create_event:204: new channel 11 (function neomake#Make[21]..<SNR>212_Make[210]..<SNR>212_handle_next_job[53]..<SNR>212_MakeJob:116) : {"id": 11, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:47:37.505 19788 channel_create_event:204: new channel 12 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[38]..airline#async#vcs_untracked[6]..airline#async#nvim_vcs_untracked:19) : {"id": 12, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:47:37.511 19788 channel_create_event:204: new channel 13 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[42]..airline#async#vcs_clean[6]..airline#async#nvim_vcs_clean:24) : {"id": 13, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:47:37.514 19788 on_process_exit:393: exited: pid=19816 status=1 stoptime=0
+INFO  2020-10-24T19:47:37.514 19788 on_process_exit:393: exited: pid=19817 status=128 stoptime=0
+INFO  2020-10-24T19:47:37.514 19788 on_process_exit:393: exited: pid=19818 status=128 stoptime=0
+INFO  2020-10-24T19:47:41.688 19788 on_process_exit:393: exited: pid=19820 status=0 stoptime=0
+INFO  2020-10-24T19:48:08.362 19788 channel_create_event:204: new channel 14 (function neomake#Make[21]..<SNR>212_Make[210]..<SNR>212_handle_next_job[53]..<SNR>212_MakeJob:116) : {"id": 14, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:48:08.378 19788 channel_create_event:204: new channel 15 (function neomake#Make[21]..<SNR>212_Make[210]..<SNR>212_handle_next_job[53]..<SNR>212_MakeJob:116) : {"id": 15, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:48:08.387 19788 channel_create_event:204: new channel 16 (function neomake#Make[21]..<SNR>212_Make[210]..<SNR>212_handle_next_job[53]..<SNR>212_MakeJob:116) : {"id": 16, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:48:08.391 19788 on_process_exit:393: exited: pid=19827 status=0 stoptime=0
+INFO  2020-10-24T19:48:08.391 19788 on_process_exit:393: exited: pid=19828 status=0 stoptime=0
+INFO  2020-10-24T19:48:08.420 19788 channel_create_event:204: new channel 17 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[38]..airline#async#vcs_untracked[6]..airline#async#nvim_vcs_untracked:19) : {"id": 17, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:48:08.422 19788 channel_create_event:204: new channel 18 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[42]..airline#async#vcs_clean[6]..airline#async#nvim_vcs_clean:24) : {"id": 18, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T19:48:08.424 19788 on_process_exit:393: exited: pid=19829 status=1 stoptime=0
+INFO  2020-10-24T19:48:08.424 19788 on_process_exit:393: exited: pid=19830 status=128 stoptime=0
+INFO  2020-10-24T19:48:08.429 19788 on_process_exit:393: exited: pid=19831 status=128 stoptime=0
+INFO  2020-10-24T19:48:12.577 19788 on_process_exit:393: exited: pid=19832 status=0 stoptime=0
+INFO  2020-10-24T20:00:14.289 20267 channel_create_event:204: new channel 3 (function provider#python3#Call[9]..remote#host#Require[10]..provider#pythonx#Require[14]..provider#Poll:6) : {"id": 3, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2020-10-24T20:00:14.418 20267 on_process_exit:393: exited: pid=20271 status=0 stoptime=0
+INFO  2020-10-24T20:00:14.576 20267 channel_create_event:204: new channel 4 (function provider#python#Call[9]..remote#host#Require[10]..provider#pythonx#Require[14]..provider#Poll:6) : {"id": 4, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2020-10-24T20:00:14.681 20267 channel_create_event:204: new channel 5 (function remote#define#FunctionBootstrap[1]..remote#host#Require[10]..provider#pythonx#Require[14]..provider#Poll:6) : {"id": 5, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2020-10-24T20:00:14.787 20267 main:554: starting main loop
+INFO  2020-10-24T20:00:14.816 20267 on_process_exit:393: exited: pid=20276 status=0 stoptime=0
+INFO  2020-10-24T20:00:14.824 20267 on_process_exit:393: exited: pid=20277 status=0 stoptime=0
+INFO  2020-10-24T20:00:14.851 20267 on_process_exit:393: exited: pid=20278 status=0 stoptime=0
+INFO  2020-10-24T20:00:14.916 20267 on_process_exit:393: exited: pid=20279 status=0 stoptime=0
+INFO  2020-10-24T20:00:18.325 20267 on_process_exit:393: exited: pid=20282 status=0 stoptime=0
+INFO  2020-10-24T20:00:18.793 20267 channel_create_event:204: new channel 6 (function sy#start[32]..sy#repo#detect[4]..sy#repo#get_diff:19) : {"id": 6, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:00:18.810 20267 on_process_exit:393: exited: pid=20283 status=0 stoptime=0
+INFO  2020-10-24T20:00:19.208 20267 channel_create_event:204: new channel 7 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>114_update_untracked[38]..airline#async#vcs_untracked[6]..airline#async#nvim_vcs_untracked:19) : {"id": 7, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:00:19.211 20267 channel_create_event:204: new channel 8 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>114_update_untracked[42]..airline#async#vcs_clean[6]..airline#async#nvim_vcs_clean:24) : {"id": 8, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:00:19.215 20267 on_process_exit:393: exited: pid=20285 status=0 stoptime=0
+INFO  2020-10-24T20:00:19.215 20267 on_process_exit:393: exited: pid=20286 status=0 stoptime=0
+INFO  2020-10-24T20:00:46.290 20267 channel_create_event:204: new channel 9 (function sy#start[61]..sy#repo#get_diff:19) : {"id": 9, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:00:46.293 20267 on_process_exit:393: exited: pid=20290 status=0 stoptime=0
+INFO  2020-10-24T20:03:50.687 20267 channel_create_event:204: new channel 10 (function sy#util#refresh_windows[9]..sy#start[61]..sy#repo#get_diff:19) : {"id": 10, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:03:50.695 20267 on_process_exit:393: exited: pid=20354 status=0 stoptime=0
+INFO  2020-10-24T20:04:04.169 20267 channel_create_event:204: new channel 11 (function sy#start[61]..sy#repo#get_diff:19) : {"id": 11, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:04:04.172 20267 on_process_exit:393: exited: pid=20360 status=0 stoptime=0
+INFO  2020-10-24T20:04:55.293 20267 channel_create_event:204: new channel 12 (function sy#start[61]..sy#repo#get_diff:19) : {"id": 12, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:04:55.312 20267 on_process_exit:393: exited: pid=20371 status=0 stoptime=0
+INFO  2020-10-24T20:04:55.325 20267 channel_create_event:204: new channel 13 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>114_update_untracked[38]..airline#async#vcs_untracked[6]..airline#async#nvim_vcs_untracked:19) : {"id": 13, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:04:55.327 20267 channel_create_event:204: new channel 14 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>114_update_untracked[42]..airline#async#vcs_clean[6]..airline#async#nvim_vcs_clean:24) : {"id": 14, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:04:55.334 20267 on_process_exit:393: exited: pid=20373 status=0 stoptime=0
+INFO  2020-10-24T20:04:55.334 20267 on_process_exit:393: exited: pid=20374 status=0 stoptime=0
+INFO  2020-10-24T20:05:08.386 20267 channel_create_event:204: new channel 15 (function sy#start[61]..sy#repo#get_diff:19) : {"id": 15, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:05:08.389 20267 on_process_exit:393: exited: pid=20381 status=0 stoptime=0
+INFO  2020-10-24T20:05:09.850 20267 channel_create_event:204: new channel 16 (function sy#start[61]..sy#repo#get_diff:19) : {"id": 16, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:05:09.855 20267 on_process_exit:393: exited: pid=20383 status=0 stoptime=0
+INFO  2020-10-24T20:05:50.226 20267 channel_create_event:204: new channel 17 (function sy#start[61]..sy#repo#get_diff:19) : {"id": 17, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:05:50.246 20267 on_process_exit:393: exited: pid=20391 status=0 stoptime=0
+INFO  2020-10-24T20:05:50.262 20267 channel_create_event:204: new channel 18 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>114_update_untracked[38]..airline#async#vcs_untracked[6]..airline#async#nvim_vcs_untracked:19) : {"id": 18, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:05:50.264 20267 channel_create_event:204: new channel 19 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>114_update_untracked[42]..airline#async#vcs_clean[6]..airline#async#nvim_vcs_clean:24) : {"id": 19, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:05:50.270 20267 on_process_exit:393: exited: pid=20393 status=0 stoptime=0
+INFO  2020-10-24T20:05:50.270 20267 on_process_exit:393: exited: pid=20394 status=0 stoptime=0
+INFO  2020-10-24T20:06:00.627 20267 on_process_exit:393: exited: pid=20400 status=0 stoptime=0
+INFO  2020-10-24T20:06:00.956 20267 channel_create_event:204: new channel 20 (function sy#start[61]..sy#repo#get_diff:19) : {"id": 20, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:06:00.963 20267 on_process_exit:393: exited: pid=20401 status=0 stoptime=0
+INFO  2020-10-24T20:06:02.812 19788 emsg_multiline:681: E37: No write since last change (add ! to override)
+INFO  2020-10-24T20:06:05.752 19788 os_proc_tree_kill:96: sending SIGTERM to PID -19791
+INFO  2020-10-24T20:06:05.752 19788 os_proc_tree_kill:96: sending SIGTERM to PID -19795
+INFO  2020-10-24T20:06:05.752 19788 os_proc_tree_kill:96: sending SIGTERM to PID -19800
+INFO  2020-10-24T20:06:05.754 19788 on_process_exit:393: exited: pid=19791 status=143 stoptime=29741050475404
+INFO  2020-10-24T20:06:05.754 19788 on_process_exit:393: exited: pid=19795 status=143 stoptime=29741050614726
+INFO  2020-10-24T20:06:05.754 19788 on_process_exit:393: exited: pid=19800 status=143 stoptime=29741050641558
+INFO  2020-10-24T20:06:05.754 19788 os_exit:581: Nvim exit: 0
+INFO  2020-10-24T20:06:16.181 20409 channel_create_event:204: new channel 3 (function provider#python3#Call[9]..remote#host#Require[10]..provider#pythonx#Require[14]..provider#Poll:6) : {"id": 3, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2020-10-24T20:06:16.302 20409 on_process_exit:393: exited: pid=20412 status=0 stoptime=0
+INFO  2020-10-24T20:06:16.367 20409 on_process_exit:393: exited: pid=20413 status=0 stoptime=0
+INFO  2020-10-24T20:06:16.440 20409 on_process_exit:393: exited: pid=20414 status=0 stoptime=0
+INFO  2020-10-24T20:06:16.601 20409 channel_create_event:204: new channel 4 (function provider#python#Call[9]..remote#host#Require[10]..provider#pythonx#Require[14]..provider#Poll:6) : {"id": 4, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2020-10-24T20:06:16.760 20409 channel_create_event:204: new channel 5 (function sy#start[32]..sy#repo#detect[4]..sy#repo#get_diff:19) : {"id": 5, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:06:16.767 20409 on_process_exit:393: exited: pid=20418 status=129 stoptime=0
+INFO  2020-10-24T20:06:16.770 20409 channel_create_event:204: new channel 6 (function remote#define#FunctionBootstrap[1]..remote#host#Require[10]..provider#pythonx#Require[14]..provider#Poll:6) : {"id": 6, "client": {}, "mode": "rpc", "stream": "job"}
+INFO  2020-10-24T20:06:16.874 20409 main:554: starting main loop
+INFO  2020-10-24T20:06:16.890 20409 channel_create_event:204: new channel 7 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[38]..airline#async#vcs_untracked[6]..airline#async#nvim_vcs_untracked:19) : {"id": 7, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:06:16.893 20409 channel_create_event:204: new channel 8 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[42]..airline#async#vcs_clean[6]..airline#async#nvim_vcs_clean:24) : {"id": 8, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:06:16.895 20409 on_process_exit:393: exited: pid=20421 status=128 stoptime=0
+INFO  2020-10-24T20:06:16.896 20409 on_process_exit:393: exited: pid=20422 status=128 stoptime=0
+INFO  2020-10-24T20:06:16.905 20409 on_process_exit:393: exited: pid=20423 status=0 stoptime=0
+INFO  2020-10-24T20:06:16.911 20409 on_process_exit:393: exited: pid=20424 status=0 stoptime=0
+INFO  2020-10-24T20:06:16.943 20409 on_process_exit:393: exited: pid=20425 status=0 stoptime=0
+INFO  2020-10-24T20:06:16.951 20409 on_process_exit:393: exited: pid=20426 status=0 stoptime=0
+INFO  2020-10-24T20:06:17.017 20409 on_process_exit:393: exited: pid=20427 status=0 stoptime=0
+INFO  2020-10-24T20:06:57.408 20409 emsg_multiline:681: E486: Pattern not found: павло
+INFO  2020-10-24T20:08:05.310 20409 channel_create_event:204: new channel 9 (function neomake#Make[21]..<SNR>212_Make[210]..<SNR>212_handle_next_job[53]..<SNR>212_MakeJob:116) : {"id": 9, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:08:05.319 20409 channel_create_event:204: new channel 10 (function neomake#Make[21]..<SNR>212_Make[210]..<SNR>212_handle_next_job[53]..<SNR>212_MakeJob:116) : {"id": 10, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:08:05.327 20409 on_process_exit:393: exited: pid=20464 status=0 stoptime=0
+INFO  2020-10-24T20:08:05.327 20409 on_process_exit:393: exited: pid=20465 status=0 stoptime=0
+INFO  2020-10-24T20:08:05.330 20409 channel_create_event:204: new channel 11 (function neomake#Make[21]..<SNR>212_Make[210]..<SNR>212_handle_next_job[53]..<SNR>212_MakeJob:116) : {"id": 11, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:08:05.361 20409 channel_create_event:204: new channel 12 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[38]..airline#async#vcs_untracked[6]..airline#async#nvim_vcs_untracked:19) : {"id": 12, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:08:05.363 20409 channel_create_event:204: new channel 13 (function airline#extensions#branch#get_head[1]..airline#extensions#branch#head[6]..<SNR>190_update_untracked[42]..airline#async#vcs_clean[6]..airline#async#nvim_vcs_clean:24) : {"id": 13, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:08:05.368 20409 on_process_exit:393: exited: pid=20466 status=1 stoptime=0
+INFO  2020-10-24T20:08:05.368 20409 on_process_exit:393: exited: pid=20467 status=128 stoptime=0
+INFO  2020-10-24T20:08:05.368 20409 on_process_exit:393: exited: pid=20468 status=128 stoptime=0
+INFO  2020-10-24T20:08:13.431 20267 channel_create_event:204: new channel 21 (function sy#util#refresh_windows[9]..sy#start[61]..sy#repo#get_diff:19) : {"id": 21, "mode": "bytes", "stream": "job"}
+INFO  2020-10-24T20:08:13.443 20267 on_process_exit:393: exited: pid=20469 status=0 stoptime=0
+INFO  2020-10-24T20:08:17.443 20409 on_process_exit:393: exited: pid=20472 status=0 stoptime=0
+INFO  2020-10-24T20:08:22.395 20267 os_proc_tree_kill:96: sending SIGTERM to PID -20270
+INFO  2020-10-24T20:08:22.395 20267 os_proc_tree_kill:96: sending SIGTERM to PID -20272
+INFO  2020-10-24T20:08:22.395 20267 os_proc_tree_kill:96: sending SIGTERM to PID -20275
+INFO  2020-10-24T20:08:22.412 20267 on_process_exit:393: exited: pid=20272 status=0 stoptime=29877693891486
+INFO  2020-10-24T20:08:22.421 20267 on_process_exit:393: exited: pid=20270 status=0 stoptime=29877693809124
+INFO  2020-10-24T20:08:22.422 20267 on_process_exit:393: exited: pid=20275 status=0 stoptime=29877693912103
+INFO  2020-10-24T20:08:22.423 20267 os_exit:581: Nvim exit: 0
