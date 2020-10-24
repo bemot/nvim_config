@@ -740,6 +740,7 @@ cmap і s
 cmap ї ]
 cmap ґ \
 cmap ' `
+cmap . /
 
 cmap [ ~
 cmap Й Q
@@ -778,3 +779,4 @@ cmap Ь M
 cmap Б <
 cmap Ю >
 cmap Ї }
+cmap , ?
