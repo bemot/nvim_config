@@ -662,7 +662,6 @@ vmap Ь M
 vmap Б <
 vmap Ю >
 vmap Ї }
-vmap Ґ |
 vmap ʼ ~
 
 " :cmap - visual and select mode maps
@@ -744,5 +743,3 @@ cmap Ь M
 cmap Б <
 cmap Ю >
 cmap Ї }
-cmap Ґ |
-cmap ʼ ~
