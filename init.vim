@@ -557,6 +557,7 @@ nmap Х {
 nmap Ъ }
 nmap Ф A
 nmap Ы S
+nmap І S 
 nmap В D
 nmap А F
 nmap П G
@@ -566,6 +567,7 @@ nmap Л K
 nmap Д L
 nmap Ж :
 nmap Э "
+nmap Є "
 nmap Ё \|
 nmap Я Z
 nmap Ч X
@@ -579,8 +581,11 @@ nmap Ю >
 nmap ш i
 nmap ф a
 nmap в dd
-" :vmap - visual and select mode maps
+nmap ї ]
+nmap ґ \
+nmap ' `
 
+" :vmap - visual and select mode maps
 vmap ] `
 vmap й q
 vmap ц w
@@ -596,6 +601,7 @@ vmap х [
 vmap ъ ]
 vmap ф a
 vmap ы s
+vmap і s
 vmap в d
 vmap а f
 vmap п g
@@ -605,6 +611,7 @@ vmap л k
 vmap д l
 vmap ж ;
 vmap э '
+vmap є '
 vmap ё \
 vmap я z
 vmap ч x
@@ -615,6 +622,9 @@ vmap т n
 vmap ь m
 vmap б ,
 vmap ю .
+vmap ї ]
+vmap ґ \
+vmap ' `
 
 vmap [ ~
 vmap Й Q
@@ -640,6 +650,7 @@ vmap Л K
 vmap Д L
 vmap Ж :
 vmap Э "
+vmap Є "
 vmap Ё \|
 vmap Я Z
 vmap Ч X
@@ -650,6 +661,9 @@ vmap Т N
 vmap Ь M
 vmap Б <
 vmap Ю >
+vmap Ї }
+vmap Ґ |
+vmap ʼ ~
 
 " :cmap - visual and select mode maps
 cmap ] `
@@ -667,6 +681,7 @@ cmap х [
 cmap ъ ]
 cmap ф a
 cmap ы s
+cmap і s
 cmap в d
 cmap а f
 cmap п g
@@ -676,6 +691,7 @@ cmap л k
 cmap д l
 cmap ж ;
 cmap э '
+cmap є '
 cmap ё \
 cmap я z
 cmap ч x
@@ -686,6 +702,10 @@ cmap т n
 cmap ь m
 cmap б ,
 cmap ю .
+cmap і s
+cmap ї ]
+cmap ґ \
+cmap ' `
 
 cmap [ ~
 cmap Й Q
@@ -702,6 +722,7 @@ cmap Х {
 cmap Ъ }
 cmap Ф A
 cmap Ы S
+cmap І S
 cmap В D
 cmap А F
 cmap П G
@@ -711,6 +732,7 @@ cmap Л K
 cmap Д L
 cmap Ж :
 cmap Э "
+cmap Є "
 cmap Ё \|
 cmap Я Z
 cmap Ч X
@@ -721,4 +743,6 @@ cmap Т N
 cmap Ь M
 cmap Б <
 cmap Ю >
-
+cmap Ї }
+cmap Ґ |
+cmap ʼ ~
