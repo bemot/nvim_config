@@ -578,12 +578,47 @@ nmap Т N
 nmap Ь M
 nmap Б <
 nmap Ю >
+
+nmap ] `
+nmap й q
+nmap ц w
+nmap у e
+nmap к r
+nmap е t
+nmap н y
+nmap г u
 nmap ш i
+nmap щ o
+nmap з p
+nmap х [
+nmap ъ ]
 nmap ф a
+nmap ы s
+nmap і s
 nmap в dd
+nmap а f
+nmap п g
+nmap р h
+nmap о j
+nmap л k
+nmap д l
+nmap ж ;
+nmap э '
+nmap є '
+nmap ё \
+nmap я z
+nmap ч x
+nmap с c
+nmap м v
+nmap и b
+nmap т n
+nmap ь m
+nmap б ,
+nmap ю .
 nmap ї ]
 nmap ґ \
 nmap ' `
+
 
 " :vmap - visual and select mode maps
 vmap ] `
