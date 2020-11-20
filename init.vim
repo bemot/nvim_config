@@ -157,6 +157,13 @@ Plug 'ryanoasis/vim-devicons'
 "GraphQL plugin
 Plug 'jparise/vim-graphql'
 "
+" bobik
+" install vim-rooter 
+Plug 'airblade/vim-rooter'
+"
+Plug 'tpope/vim-obsession'
+Plug 'kien/tabman.vim' 
+
 if using_vim
     " Consoles as buffers (neovim has its own consoles as buffers)
     Plug 'rosenfeld/conque-term'
@@ -179,6 +186,9 @@ if vim_plug_just_installed
     echo "Installing Bundles, please ignore key map error messages"
     :PlugInstall
 endif
+
+" set transparent background
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE " transparent bg
 
 " ============================================================================
 " Vim settings and mappings
@@ -516,7 +526,7 @@ nnoremap <leader>v :!mupdf %:r.pdf &<CR><CR>
 " choosing default tex flavor
 let g:tex_flavor = 'latex'
 
-"bobok says - !!!fzf!!! - see help no fzf 
+"bobik says - !!!fzf!!! - see help no fzf 
 " for greplace
 set grepprg=ag
 
@@ -698,5 +708,10 @@ vmap Б <
 vmap Ю >
 vmap Ї }
 vmap ʼ ~
-
-
+" bobik 2 next lines
+noremap <silent> <C-S-Left> :vertical resize +1<CR>
+noremap <silent> <C-S-Right> :vertical resize -1<CR>
+" Save session on quitting Vim
+" Save session on quitting Vim
+" autocmd VimLeave * NERDTreeClose
+autocmd VimLeave * Obsess! ses.vim 
