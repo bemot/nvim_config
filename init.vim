@@ -19,21 +19,12 @@ let using_vim = !using_neovim
 " Avoid modifying this section, unless you are very sure of what you are doing
 
 let vim_plug_just_installed = 0
-if using_neovim
-    let vim_plug_path = expand('~/.config/nvim/autoload/plug.vim')
-else
-    let vim_plug_path = expand('~/.vim/autoload/plug.vim')
-endif
+ let vim_plug_path = expand('~/.config/nvim/autoload/plug.vim')
 if !filereadable(vim_plug_path)
     echo "Installing Vim-plug..."
     echo ""
-    if using_neovim
-        silent !mkdir -p ~/.config/nvim/autoload
-        silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    else
-        silent !mkdir -p ~/.vim/autoload
-        silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    endif
+silent !mkdir -p ~/.config/nvim/autoload
+silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     let vim_plug_just_installed = 1
 endif
 
@@ -53,11 +44,8 @@ endif
 
 " this needs to be here, so vim-plug knows we are declaring the plugins we
 " want to use
-if using_neovim
-    call plug#begin("~/.config/nvim/plugged")
-else
-    call plug#begin("~/.vim/plugged")
-endif
+
+call plug#begin("~/.config/nvim/plugged")
 
 " Now the actual plugins:
 "bobik normal mode in cyrillic
@@ -70,9 +58,13 @@ endif
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
 "snippets
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
+"Plug 'MarcWeber/vim-addon-mw-utils'
+"Plug 'tomtom/tlib_vim'
+"Plug 'garbas/vim-snipmate'
+" bobik
+"python snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 "tex edit
 Plug 'lervag/vimtex'
 "search and replace
@@ -158,18 +150,18 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'jparise/vim-graphql'
 "
 " bobik
+"python snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+" bobik
 " install vim-rooter 
 Plug 'airblade/vim-rooter'
 "
 Plug 'tpope/vim-obsession'
 Plug 'kien/tabman.vim' 
 
-if using_vim
-    " Consoles as buffers (neovim has its own consoles as buffers)
-    Plug 'rosenfeld/conque-term'
-    " XML/HTML tags navigation (neovim has its own)
-    Plug 'vim-scripts/matchit.zip'
-endif
+" bobik mouse 
+set mouse=n 
 
 " Code searcher. If you enable it, you should also configure g:hound_base_url 
 " and g:hound_port, pointing to your hound instance
@@ -197,46 +189,6 @@ autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE " transparent bg
 let g:python3_host_prog = '/home/sasha/pythonchik_NVIM/bin/python'
 " for snipmate file
 "
-if using_vim
-    " A bunch of things that are set by default in neovim, but not in vim
-
-    " no vi-compatible
-    set nocompatible
-
-    " allow plugins by file type (required for plugins!)
-    filetype plugin on
-    filetype indent on
-
-    " always show status bar
-    set ls=2
-
-    " incremental search
-    set incsearch
-    " highlighted search results
-    set hlsearch
-
-    " syntax highlight on
-    syntax on
-
-    " better backup, swap and undos storage for vim (nvim has nice ones by
-    " default)
-    set directory=~/.vim/dirs/tmp     " directory to place swap files in
-    set backup                        " make backup files
-    set backupdir=~/.vim/dirs/backups " where to put backup files
-    set undofile                      " persistent undos - undo after you re-open the file
-    set undodir=~/.vim/dirs/undos
-    set viminfo+=n~/.vim/dirs/viminfo
-    " create needed directories if they don't exist
-    if !isdirectory(&backupdir)
-        call mkdir(&backupdir, "p")
-    endif
-    if !isdirectory(&directory)
-        call mkdir(&directory, "p")
-    endif
-    if !isdirectory(&undodir)
-        call mkdir(&undodir, "p")
-    endif
-end
 
 " tabs and spaces handling
 set expandtab
@@ -455,15 +407,10 @@ highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
 let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
 " Yankring -------------------------------
-
-if using_neovim
-    let g:yankring_history_dir = '~/.config/nvim/'
-    " Fix for yankring and neovim problem when system has non-text things
-    " copied in clipboard
-    let g:yankring_clipboard_monitor = 0
-else
-    let g:yankring_history_dir = '~/.vim/dirs/'
-endif
+let g:yankring_history_dir = '~/.config/nvim/'
+" Fix for yankring and neovim problem when system has non-text things
+" copied in clipboard
+let g:yankring_clipboard_monitor = 0
 
 " Airline ------------------------------
 
@@ -494,11 +441,8 @@ endif
 " Custom configurations ----------------
 
 " Include user's custom nvim configurations
-if using_neovim
-    let custom_configs_path = "~/.config/nvim/custom.vim"
-else
-    let custom_configs_path = "~/.vim/custom.vim"
-endif
+
+let custom_configs_path = "~/.config/nvim/custom.vim"
 if filereadable(expand(custom_configs_path))
   execute "source " . custom_configs_path
 endif
@@ -714,4 +658,12 @@ noremap <silent> <C-S-Right> :vertical resize -1<CR>
 " Save session on quitting Vim
 " Save session on quitting Vim
 " autocmd VimLeave * NERDTreeClose
-autocmd VimLeave * Obsess! ses.vim 
+autocmd VimLeave * Obsess! ses.vim
+
+"trigger snippets UltiSnips
+" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" - https://github.com/Valloric/YouCompleteMe
+" - https://github.com/nvim-lua/completion-nvim
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
