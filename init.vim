@@ -3,12 +3,12 @@
 " version: 12.0.0
 
 " To use fancy symbols wherever possible, change this setting from 0 to 1
-" and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
-" (if you aren't using one of those fonts, you will see funny characters here. 
+" and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal
+" (if you aren't using one of those fonts, you will see funny characters here.
 " Turst me, they look nice when using one of those fonts).
 let fancy_symbols_enabled = 1
 "bobik
-let mapleader=","
+let mapleader="\<Space>"
 "end bobik
 set encoding=utf-8
 let using_neovim = has('nvim')
@@ -33,9 +33,9 @@ if vim_plug_just_installed
     :execute 'source '.fnameescape(vim_plug_path)
 endif
 
-" Obscure hacks done, you can now modify the rest of the config down below 
+" Obscure hacks done, you can now modify the rest of the config down below
 " as you wish :)
-" IMPORTANT: some things in the config are vim or neovim specific. It's easy 
+" IMPORTANT: some things in the config are vim or neovim specific. It's easy
 " to spot, they are inside `if using_vim` or `if using_neovim` blocks.
 
 " ============================================================================
@@ -50,6 +50,8 @@ call plug#begin("~/.config/nvim/plugged")
 " Now the actual plugins:
 "bobik normal mode in cyrillic
 "Plug 'rtxanson/vim-cyrillic'
+"fancy cow
+Plug  'mhinz/vim-startify'
 "bobik
 "Php-vim
 "Plug 'StanAngeloff/php.vim'
@@ -154,16 +156,20 @@ Plug 'jparise/vim-graphql'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " bobik
-" install vim-rooter 
+" install vim-rooter
 Plug 'airblade/vim-rooter'
 "
 Plug 'tpope/vim-obsession'
-Plug 'kien/tabman.vim' 
+Plug 'kien/tabman.vim'
 
-" bobik mouse 
-set mouse=n 
+" bobik mouse
+set mouse=n
 
-" Code searcher. If you enable it, you should also configure g:hound_base_url 
+command! Filename execute ":echo expand('%:p')"
+command! Config execute ":e $MYVIMRC"
+command! Reload execute "source ~/.config/nvim/init.vim"
+
+" Code searcher. If you enable it, you should also configure g:hound_base_url
 " and g:hound_port, pointing to your hound instance
 " Plug 'mattn/webapi-vim'
 " Plug 'jfo/hound.vim'
@@ -186,6 +192,7 @@ autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE " transparent bg
 " Vim settings and mappings
 " You can edit them as you wish
 "bobik
+let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.95 } }
 let g:python3_host_prog = '/home/sasha/pythonchik_NVIM/bin/python'
 " for snipmate file
 "
@@ -200,7 +207,7 @@ set shiftwidth=4
 set nu
 
 " remove ugly vertical lines on window division
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 
 " use 256 colors when possible
 if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256')
@@ -228,7 +235,7 @@ set wildmode=list:longest
 ca w!! w !sudo tee "%"
 
 " tab navigation mappings
-map tt :tabnew 
+map tt :tabnew
 map <M-Right> :tabn<CR>
 imap <M-Right> <ESC>:tabn<CR>
 map <M-Left> :tabp<CR>
@@ -245,7 +252,7 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 
 " fix problems with uncommon shells (fish, xonsh) and plugins running commands
 " (neomake, ...)
-set shell=/bin/bash 
+set shell=/bin/bash
 
 " Ability to add python breakpoints
 " (I use ipdb, but you can change it to whatever tool you use for debugging)
@@ -368,7 +375,7 @@ nmap ,D :tab split<CR>:call jedi#goto()<CR>
 " Ack.vim ------------------------------
 
 " mappings
-nmap ,r :Ack 
+nmap ,r :Ack
 nmap ,wr :execute ":Ack " . expand('<cword>')<CR>
 "bobik
 nnoremap <buffer> <F9> :w <bar> :exec '!python' shellescape(@%, 1)<cr>
@@ -460,7 +467,7 @@ function! HelpInNewTab ()
         "Convert the help window to a tab...
         execute "normal \<C-W>T"
     endif
-endfunction  
+endfunction
 " tex file compilation
 nnoremap <leader>c :w<CR>:! pdflatex %<CR>
 
@@ -470,7 +477,7 @@ nnoremap <leader>v :!mupdf %:r.pdf &<CR><CR>
 " choosing default tex flavor
 let g:tex_flavor = 'latex'
 
-"bobik says - !!!fzf!!! - see help no fzf 
+"bobik says - !!!fzf!!! - see help no fzf
 " for greplace
 set grepprg=ag
 
@@ -511,7 +518,7 @@ nmap Х {
 nmap Ъ }
 nmap Ф A
 nmap Ы S
-nmap І S 
+nmap І S
 nmap В D
 nmap А F
 nmap П G
