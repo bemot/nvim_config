@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/sasha/.config/nvim'
+let g:netrw_dirhist_9='/home/sasha/.config'
+let g:netrw_dirhist_8='/home/sasha'
 let g:netrw_dirhist_7='/home/sasha/.vim'
 let g:netrw_dirhist_6='/home/sasha/WORK/CODING/CODEREDCMS/coderedcmssite1/website/templates/coderedcms/pages'
 let g:netrw_dirhist_5='/home/sasha/WORK/CODING/CODEREDCMS/coderedcmssite1/website/templates/coderedcms'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_4='/home/sasha/WORK/CODING/CODEREDCMS/coderedcmssite1/websit
 let g:netrw_dirhist_3='/home/sasha/WORK/CODING/CODEREDCMS/coderedcmssite1/website'
 let g:netrw_dirhist_2='/home/sasha/WORK/CODING/CODEREDCMS/coderedcmssite1'
 let g:netrw_dirhist_1='/home/sasha/WORK/CODING/SALEOR/saleor-platform'
-let g:netrw_dirhist_0='/home/sasha/WORK/WAGTAIL/django-oscar-wagtail/irashop/irashop/home'
-let g:netrw_dirhist_9='/home/sasha/WORK/WAGTAIL/django-oscar-wagtail/irashop/irashop'
-let g:netrw_dirhist_8='/home/sasha/WORK/WAGTAIL/django-oscar-wagtail/irashop/irashop/irashop'

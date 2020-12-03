@@ -7,11 +7,9 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +165 ~/.vim/vimrc
 badd +0 init.vim
 argglobal
 %argdel
-$argadd ~/.vim/vimrc
 edit init.vim
 set splitbelow splitright
 set nosplitbelow
@@ -31,12 +29,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 190 - ((32 * winheight(0) + 27) / 55)
+let s:l = 345 - ((26 * winheight(0) + 27) / 55)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-190
-normal! 0
+345
+normal! 016|
+lcd ~/.config/nvim
 tabnext 1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

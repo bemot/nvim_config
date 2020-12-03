@@ -1,5 +1,5 @@
-" Fisa-vim-config, a config for both Vim and NeoVim
-" http://vim.fisadev.com
+"
+
 " version: 12.0.0
 
 " To use fancy symbols wherever possible, change this setting from 0 to 1
@@ -324,27 +324,28 @@ let g:neomake_virtualtext_current_error = 0
 " Fzf ------------------------------
 
 " file finder mapping
-nmap ,e :Files<CR>
+nmap <leader>e :Files<CR>
 " tags (symbols) in current file finder mapping
-nmap ,g :BTag<CR>
+nmap <leader>g :BTag<CR>
 " the same, but with the word under the cursor pre filled
-nmap ,wg :execute ":BTag " . expand('<cword>')<CR>
+nmap <leader>wg :execute ":BTag " . expand('<cword>')<CR>
 " tags (symbols) in all files finder mapping
-nmap ,G :Tags<CR>
+nmap <leader>G :Tags<CR>
 " the same, but with the word under the cursor pre filled
-nmap ,wG :execute ":Tags " . expand('<cword>')<CR>
+nmap <leader>wG :execute ":Tags " . expand('<cword>')<CR>
 " general code finder in current file mapping
-nmap ,f :BLines<CR>
+nmap <leader>f :BLines<CR>
 " the same, but with the word under the cursor pre filled
-nmap ,wf :execute ":BLines " . expand('<cword>')<CR>
+nmap <leader>wf :execute ":BLines " . expand('<cword>')<CR>
 " general code finder in all files mapping
-nmap ,F :Lines<CR>
+nmap <leader>F :Lines<CR>
 " the same, but with the word under the cursor pre filled
-nmap ,wF :execute ":Lines " . expand('<cword>')<CR>
+nmap <leader>wF :execute ":Lines " . expand('<cword>')<CR>
 " commands finder mapping
-nmap ,c :Commands<CR>
+nmap <leader>co :Commands<CR>
+
 " general search Ag
-nmap ,l :Ag<CR>
+nmap <leader>l :Ag<CR>
 " general search Rg
 nmap <leader>x :Rg<Cr>
 " Deoplete -----------------------------
